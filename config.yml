@@ -1,4 +1,4 @@
-baseURL: http://muhsi.in/
+baseURL: https://muhsi.in/
 title: Muhsin A
 paginate: 5
 theme: PaperMod
@@ -41,14 +41,17 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  hideFooter: true
+  searchHidden: false
+  
 
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "resources/favicons/favicon.ico"
-    favicon16x16: "resources/favicons/favicon-16x16.png"
-    favicon32x32: "resources/favicons/favicon-32x32.png"
-    apple_touch_icon: "resources/favicons/apple-touch-icon.png"
+    favicon: "/favicons/favicon.ico"
+    favicon16x16: "/favicons/favicon-16x16.png"
+    favicon32x32: "/favicons/favicon-32x32.png"
+    apple_touch_icon: "/favicons/apple-touch-icon.png"
 
   label:
     text: "Muhsin A"
@@ -56,19 +59,21 @@ params:
     iconHeight: 35
 
   # profile-mode
-  # profileMode:
-  #   enabled: true # needs to be explicitly set
-  #   title: ExampleSite
-  #   subtitle: "This is subtitle"
-  #   imageUrl: "<img location>"
-  #   imageWidth: 120
-  #   imageHeight: 120
-  #   imageTitle: my image
-  #   buttons:
-  #     - name: Posts
-  #       url: posts
-  #     - name: Tags
-  #       url: tags
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Hey there \U0001F44B"
+    subtitle: I'm a web dev specialized in JavaScript.
+      I'm just swimming through endless libraries and frameworks of javascript to find something that can
+      <a href='https://www.youtube.com/watch?v=B8C5sjjhsso' class='title-link' target='_blank' rel='noopener noreferrer'>make the world a better place</a>
+      Besides coding I love videogames, music and drawing.
+    imageUrl: "/img/avatar.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+
+    buttons:
+      - name: Say Hello?
+        url: "mailto:muhsin7ak@gmail.com"
 
   # home-info mode
   homeInfoParams:
